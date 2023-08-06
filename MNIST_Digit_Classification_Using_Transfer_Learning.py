@@ -1,17 +1,16 @@
 #importing the dependencies
 # most important deep learning libraraies are tenflow, keras and pytouch
 
-import numpy as np #for numpy arrays
-import matplotlib.pyplot as plt #for the plots and graphs that we want
-from matplotlib import pyplot
-import seaborn as sns #for the plots and graphs that we want
-import cv2 #open cv library for image processing tasks
-from PIL import Image #also for image processing tasks
+import cv2  # open cv library for image processing tasks
+import matplotlib.pyplot as plt  # for the plots and graphs that we want
+import numpy as np  # for numpy arrays
+import seaborn as sns  # for the plots and graphs that we want
 import tensorflow as tf
+from matplotlib import pyplot
+
 tf.random.set_seed(3)
 from tensorflow import keras
 from keras.datasets import mnist
-from tensorflow.math import confusion_matrix
 
 
 

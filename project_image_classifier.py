@@ -6,6 +6,8 @@ import cv2
 import matplotlib.pyplot as plt
 # filename = r'C:\Users\anshi\Downloads\butterfly.jpg'
 # filename = r"C:\Users\anshi\Downloads\traffic-lights.jpg"
+from keras.applications import imagenet_utils
+
 filename = r"C:\Users\anshi\Downloads\road_image.jpg"
 # filename = r"C:\Users\anshi\Downloads\zoo.jpg"
 # filename = r"C:\Users\anshi\Downloads\zebra.jpg"
@@ -35,7 +37,7 @@ final_image = tf.keras.applications.mobilenet_v2.preprocess_input(final_image) #
 print(final_image.shape)
 predictions = mobile.predict(final_image)
 # print(predictions) #it gives the output as all the values in the form of numerical probabilities predicted in terms of each 224 pixels in 4 dimensions
-from tensorflow.keras.applications import imagenet_utils
+import tensorflow.keras.applications
 results = imagenet_utils.decode_predictions(predictions) #converts the results into string values
 print(results)
 
